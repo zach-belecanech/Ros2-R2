@@ -1,0 +1,2 @@
+Invoking command in '/home/easz/Ros2-R2/build/r6_d9': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/easz/Ros2-R2/build/r6_d9 -- -j4 -l4
+Invoked command in '/home/easz/Ros2-R2/build/r6_d9' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/easz/Ros2-R2/build/r6_d9 -- -j4 -l4

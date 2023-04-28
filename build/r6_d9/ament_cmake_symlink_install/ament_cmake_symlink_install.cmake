@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/easz/r2_ws/install/r6_d9/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/easz/Ros2-R2/install/r6_d9/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/easz/r2_ws/install/r6_d9/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/easz/Ros2-R2/install/r6_d9/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/easz/r2_ws/install/r6_d9/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/easz/Ros2-R2/install/r6_d9/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/easz/r2_ws/install/r6_d9/${destination}")
+      set(destination "/home/easz/Ros2-R2/install/r6_d9/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,52 +311,52 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_directory("/home/easz/r2_ws/src/r6_d9" DIRECTORY "launch" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_directory("/home/easz/Ros2-R2/src/r6_d9" DIRECTORY "launch" "DESTINATION" "share/r6_d9")
 
 # install(DIRECTORY "config" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_directory("/home/easz/r2_ws/src/r6_d9" DIRECTORY "config" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_directory("/home/easz/Ros2-R2/src/r6_d9" DIRECTORY "config" "DESTINATION" "share/r6_d9")
 
 # install(DIRECTORY "description" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_directory("/home/easz/r2_ws/src/r6_d9" DIRECTORY "description" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_directory("/home/easz/Ros2-R2/src/r6_d9" DIRECTORY "description" "DESTINATION" "share/r6_d9")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/r6_d9" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/r6_d9" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/r6_d9" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/r6_d9" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/r6_d9" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/r6_d9" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/r6_d9" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/r6_d9" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/r6_d9/environment")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/r6_d9/environment")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/r6_d9/environment")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/r6_d9/environment")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/r6_d9/environment")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/r6_d9/environment")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/r6_d9/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/r6_d9/environment")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/r6_d9/environment")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/r6_d9/environment")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/r6_d9/environment")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/r6_d9/environment")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/r6_d9/environment")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/r6_d9/environment")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/r6_d9")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/r6_d9")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/r6_d9")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/r6_d9")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/r6_d9")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/r6_d9")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/r6_d9")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/r6_d9")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/r6_d9")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/r6_d9")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/packages/r6_d9" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/packages/r6_d9" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/packages/r6_d9" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_index/share/ament_index/resource_index/packages/r6_d9" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_core/r6_d9Config.cmake" "/home/easz/r2_ws/build/r6_d9/ament_cmake_core/r6_d9Config-version.cmake" "DESTINATION" "share/r6_d9/cmake")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/build/r6_d9/ament_cmake_core/r6_d9Config.cmake" "/home/easz/r2_ws/build/r6_d9/ament_cmake_core/r6_d9Config-version.cmake" "DESTINATION" "share/r6_d9/cmake")
+# install(FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_core/r6_d9Config.cmake" "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_core/r6_d9Config-version.cmake" "DESTINATION" "share/r6_d9/cmake")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_core/r6_d9Config.cmake" "/home/easz/Ros2-R2/build/r6_d9/ament_cmake_core/r6_d9Config-version.cmake" "DESTINATION" "share/r6_d9/cmake")
 
-# install(FILES "/home/easz/r2_ws/src/r6_d9/package.xml" "DESTINATION" "share/r6_d9")
-ament_cmake_symlink_install_files("/home/easz/r2_ws/src/r6_d9" FILES "/home/easz/r2_ws/src/r6_d9/package.xml" "DESTINATION" "share/r6_d9")
+# install(FILES "/home/easz/Ros2-R2/src/r6_d9/package.xml" "DESTINATION" "share/r6_d9")
+ament_cmake_symlink_install_files("/home/easz/Ros2-R2/src/r6_d9" FILES "/home/easz/Ros2-R2/src/r6_d9/package.xml" "DESTINATION" "share/r6_d9")

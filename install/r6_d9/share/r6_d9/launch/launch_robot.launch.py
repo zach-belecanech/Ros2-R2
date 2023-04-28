@@ -1,0 +1,1 @@
+/home/easz/Ros2-R2/src/r6_d9/launch/launch_robot.launch.py

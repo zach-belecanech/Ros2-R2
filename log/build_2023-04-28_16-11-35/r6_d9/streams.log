@@ -1,0 +1,6 @@
+[0.011s] Invoking command in '/home/easz/Ros2-R2/build/r6_d9': /usr/bin/cmake --build /home/easz/Ros2-R2/build/r6_d9 -- -j4 -l4
+[0.016s] [0mCMake Error: The current CMakeCache.txt directory /home/easz/Ros2-R2/build/r6_d9/CMakeCache.txt is different than the directory /home/easz/r2_ws/build/r6_d9 where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.024s] [0mCMake Error: The source directory "/home/easz/r2_ws/src/r6_d9" does not exist.
+[0.024s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.025s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.027s] Invoked command in '/home/easz/Ros2-R2/build/r6_d9' returned '2': /usr/bin/cmake --build /home/easz/Ros2-R2/build/r6_d9 -- -j4 -l4
