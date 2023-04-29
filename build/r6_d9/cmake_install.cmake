@@ -1,8 +1,8 @@
-# Install script for directory: /home/easz/r2_ws/src/r6_d9
+# Install script for directory: /home/easz/Ros2-R2/src/r6_d9
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/easz/r2_ws/install/r6_d9")
+  set(CMAKE_INSTALL_PREFIX "/home/easz/Ros2-R2/install/r6_d9")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/easz/r2_ws/build/r6_d9/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/easz/Ros2-R2/build/r6_d9/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/easz/r2_ws/build/r6_d9/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/easz/Ros2-R2/build/r6_d9/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
