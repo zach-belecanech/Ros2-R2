@@ -1,0 +1,2 @@
+Invoking command in '/home/easz/Ros2-R2/build/r6_d9': /usr/bin/cmake /home/easz/Ros2-R2/src/r6_d9 -DCMAKE_INSTALL_PREFIX=/home/easz/Ros2-R2/install/r6_d9
+Invoked command in '/home/easz/Ros2-R2/build/r6_d9' returned '1': /usr/bin/cmake /home/easz/Ros2-R2/src/r6_d9 -DCMAKE_INSTALL_PREFIX=/home/easz/Ros2-R2/install/r6_d9
