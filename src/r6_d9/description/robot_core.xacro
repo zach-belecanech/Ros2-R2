@@ -29,7 +29,7 @@
     <joint name="chassis_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
-        <origin xyz="-0.075 0.0 0.222" rpy="0.0 0.5 0.0"/>  
+        <origin xyz="0.075 0.0 0.222" rpy="0.0 0.5 ${pi}"/>  
     </joint>
 
     <!-- Chassis Link -->
@@ -211,7 +211,7 @@
     <link name="caster_wheel">
         <visual>
             <geometry>
-                <sphere radius="0.0325"/>
+                <sphere radius="0.06"/>
             </geometry>
             <material name="yellow"/>
         </visual>
@@ -219,12 +219,12 @@
 
         <collision>
             <geometry>
-                <sphere radius="0.0325"/>
+                <sphere radius="0.06"/>
             </geometry>
         </collision>
 
 
-        <xacro:inertial_sphere mass="0.1" radius="0.0325">
+        <xacro:inertial_sphere mass="0.1" radius="0.06">
             <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
         </xacro:inertial_sphere> 
 

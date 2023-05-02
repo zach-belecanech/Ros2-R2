@@ -1,0 +1,6 @@
+Invoking command in '/home/easz/Ros2-R2/build/r6_d9': CMAKE_PREFIX_PATH=/home/easz/controller/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/easz/Ros2-R2/src/r6_d9 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/easz/Ros2-R2/install/r6_d9
+Invoked command in '/home/easz/Ros2-R2/build/r6_d9' returned '0': CMAKE_PREFIX_PATH=/home/easz/controller/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/easz/Ros2-R2/src/r6_d9 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/easz/Ros2-R2/install/r6_d9
+Invoking command in '/home/easz/Ros2-R2/build/r6_d9': CMAKE_PREFIX_PATH=/home/easz/controller/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/easz/Ros2-R2/build/r6_d9 -- -j4 -l4
+Invoked command in '/home/easz/Ros2-R2/build/r6_d9' returned '0': CMAKE_PREFIX_PATH=/home/easz/controller/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/easz/Ros2-R2/build/r6_d9 -- -j4 -l4
+Invoking command in '/home/easz/Ros2-R2/build/r6_d9': CMAKE_PREFIX_PATH=/home/easz/controller/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/easz/Ros2-R2/build/r6_d9
+Invoked command in '/home/easz/Ros2-R2/build/r6_d9' returned '0': CMAKE_PREFIX_PATH=/home/easz/controller/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/easz/Ros2-R2/build/r6_d9
